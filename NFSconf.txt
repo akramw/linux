@@ -1,0 +1,26 @@
+NFS
+yum install nfs* -y
+mkdir /testnfs
+chmod 777 testnfs
+vim /etc/exports
+/testnfs * (rw,sync)
+ls testnfs/
+systemctl start nfs-service
+systemctl enable nfs-service
+firewall-cmd --permanent --add-service=nfs
+firewall-cmd --permanent --add-service=rpc-bind
+firewall-cmd --permanent --add-service=mountd
+firewall-cmd --reload
+exportfs -v
+exportfs -r
+
+mkdir /nfstest
+showmount -e  192.168.1.101
+mount 192.168.1.101:/testnfs /nfstest
+df -Th
+cd nfstest/
+mkdir kill\ bill{1..20}
+ls
+
+vim /etc/fstab
+192.168.1.101:/testnfs     /nfstest deafult nfs 00
