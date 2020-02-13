@@ -1,0 +1,760 @@
+***********************Simple Linux Questions***********************
+What is the name and the UID of the administrator user?
+How to list all files, including hidden one, in a directory?
+What is the Unix/Linux command to remove a directory and its contents?
+Which command will show you free/used memory? Does free memory exist on Linux?
+How to connect to a remote server or what is SSH?
+I get "command not found" for ifconfig -a. What can be wrong?
+What command will show the available disk space on the Unix/Linux system?
+What Unix/Linux commands will alter a files ownership, files permissions?
+What does chmod +x FILENAMEdo?
+What does the permission 0750 on a file mean?
+What does the permission 0750 on a directory mean?
+How to redirect STDOUT and STDERR in bash? (> /dev/null 2>&1)
+What is the difference between UNIX and Linux
+What is the difference between Telnet and SSH?
+Explain the three load averages and what do they indicate
+
+
+***********************Medium Linux Questions***********************
+What is a packet filter and how does it work?
+What is swap and what is it used for?
+What is an A record, an NS record, a PTR record, a CNAME record, an MX record?
+Are there any other RRs and what are they used for?
+What is the sticky bit?
+What is an inode and what fields are stored in an inode?
+What is a runlevel and how to get the current runlevel?
+What is SSH port forwarding?
+Describe a scenario when you get a "filesystem is full" error, but 'df' shows there is free space.
+Describe a scenario when deleting a file, but 'df' not showing the space being freed.
+What happens to a child process that dies and has no parent process to wait for it and what’s bad about this?
+How to know which process listens on a specific port?
+What is Iptables?
+Which privilege is required to operate iptables?
+How can you find all the regular files in a directory?
+What is LVM?
+Which command is used to extend a logical volume?
+Tell me the steps to remove the swap file?
+What is the role of /etc/resolv.conf file?
+What daemon is responsible for tracking events on your system?
+
+***********************Hard Linux Questions***********************
+What shortcuts do you use on a regular basis?
+What kind of keys are in ~/.ssh/authorized_keys and what it is this file used for?
+I've added my public ssh key into authorized_keys but I'm still getting a password prompt, what can be wrong?
+Did you ever create RPM's, DEB's or solaris pkg's?
+Describe the linux boot process with as much detail as possible, starting from when the system is powered on and ending when you get a prompt.
+When trying to umount a directory it says it's busy, how to find out which PID holds the directory?
+How do you debug a running process or a library that is being called? A: strace -p PID
+What are the steps to create LVM logical volume?
+Java Administration
+What is the JVM?
+Describe garbage collection.
+What are the types of garbage collectors?
+Walk me through a garbage collection, what happens?
+What are the heap generations?
+Describe the young heap spaces.
+What is stored in the To space of a young generation
+How do you set the heap size?
+
+
+***********************Apache***********************
+What is the basic directory structure?
+What files are contained in /etc/httpd/conf.d?
+What is virtual hosting?
+What are the types of virtual hosts?
+What is meaning of "Listen" in httpd.conf file?
+What is DocumentRoot?
+Can I serve content out of a directory other than the DocumentRoot directory?
+Which tool you have used for Apache benchmarking?
+You are getting following codes (2xx, 3xx, 4xx, 5xx) in Apache, at some point of time. What does this means?
+Can we have two Apache Web servers on a single machine?
+Which of the following best explains why Apache Web servers are able to handles multiple requests? A. Apache is able to spawn child processes that handle requests before they die.
+What does DSO stands for?
+
+
+***********************Redhat***********************
+What is RPM?
+What is YUM?
+Explain the differences.
+What does /boot directory contains?
+What does /dev directory contain?
+If you are getting error "package is already installed" but you have to install package any how. what option you will use?
+How to install Linux software’s by RPM?
+How Many Run Levels present in Linux?
+0: Halt the system
+1: Single-user mode
+2: Not used
+3: Multi-user mode with text login
+4: Not used
+5: Multi-user mode with graphical login
+6: Reboot
+What is the default runlevel for a server?
+Explain /proc filesystem?
+
+
+***********************Puppet***********************
+What is Puppet?
+What is Manifests?
+What is Module and How it is different from Manifest?
+What is Facter?
+
+***********************Shell***********************
+What does . mean in regular expressions?
+What is difference between ” and ‘?
+What does $? give you?
+You might have heard about inodes. can you describe inode briefly?
+A ‘inode’ is a ‘data-structure’, which is used for file identification on Linux. Each file on an Unix System has a separate ‘inode’ and an ‘Unique’ inode Number.
+What is the difference between $$ and $!?
+DNS
+which are the important configuration files for DNS server ?
+On which port DNS server works ?
+
+******************************Simple Questions******************************
+What did you learn this week?
+What excites or interests you about the sysadmin world?
+What is a recent technical challenge you experienced and how did you solve it?
+Tell me about the last major project you finished.
+Do you contribute to any open source projects?
+Describe the setup of your homelab.
+What personal achievement are you most proud of?
+Tell me about the biggest mistake you've made. How would you do it differently today?
+What software tools are you going to install on the first day at a new job?
+Tell me about how you manage your knowledge database (e.g. wikis, files, portals).
+What news sources do you check daily? (sysadmin, security-related or other)
+Your NOC team has a new budget for sysadmin certifications. What certificate would you like and why?
+How do you interact with developers: us vs. them or all pulling together with a different approach?
+Which sysadmin question would you ask, if you were interviewing me, to know, how good I'm with non-standard situations?
+
+
+******************************System Questions******************************
+Give some examples of Linux distribution. What is your favorite distro and why?
+What are the differences between Unix, Linux, BSD, and GNU?
+What is a CLI? Tell me about your favorite CLI tools, tips, and hacks.
+What is your favorite shell and why?
+How do you get help on the command line? ***
+Your first 5 commands on a *nix server after login.
+What do the fields in ls -al output mean?
+How do you get a list of logged-in users?
+What is the advantage of executing the running processes in the background? How can you do that?
+Before you can manage processes, you must be able to identify them. Which tools will you use? ***
+Running the command as root user. It is a good or bad practices?
+How to check memory stats and CPU stats?
+What is load average?
+Where is my password stored on Linux/Unix?
+How to recursively change permissions for all directories except files and for all files except directories?
+Every command fails with command not found. How to trace the source of the error and resolve it?
+You typing CTRL + C but your script still running. How do you stop it? ***
+What is grep command? How to match multiple strings in the same line?
+Explain the file content commands along with the description.
+SIGHUP, SIGINT, SIGKILL, and SIGTERM POSIX signals. Explain.
+What does kill command do?
+What is the difference between rm and rm -rf?
+How do I grep recursively? Explain on several examples. ***
+archive.tgz has ~30 GB. How do you list content of it and extract only one file?
+Execute combine multiple shell commands in one line.
+What symbolic representation can you pass to chmod to give all users execute access to a file without affecting other permissions?
+How can I sync two local directories?
+Many basic maintenance tasks require you to edit config files. Explain ways to undo the changes you make.
+You have to find all files larger than 20MB. How you do it?
+Why do we use sudo su - and not just sudo su?
+How to find files that have been modified on your system in the past 60 minutes?
+What are the main reasons for keeping old log files?
+What is an incremental backup?
+What is RAID? What is RAID0, RAID1, RAID5, RAID6, RAID10?
+How is a user’s default group determined? How would you change it?
+What is your best command line text editor for daily working and scripting? ***
+Why would you want to mount servers in a rack?
+
+
+******************************Network Questions******************************
+Draw me a simple network diagram: you have 20 systems, 1 router, 4 switches, 5 servers, and a small IP block. ***
+What are the most important things to understand about the OSI (or any other) model?
+What is the difference between a VLAN and a subnet? Do you need a VLAN to setup a subnet?
+List 5 common network ports you should know.
+What POP and IMAP are, and how to choose which of them you should implement?
+How to check default route and routing table?
+What is the difference between 127.0.0.1 and localhost?
+Which port is used for ping command?
+Server A can't talk to Server B. Describe possible reasons in a few steps.
+Why won’t the hostnames resolve on your server? Fix this issue. ***
+How to resolve the domain name (using external dns) with CLI? Can IPs be resolved to domain names?
+How to test port connectivity with telnet or nc?
+Why should you avoid telnet to administer a system remotely?
+What is the difference between wget and curl?
+What is SSH and how does it work?
+Most tutorials suggest using SSH key authentication rather than password authentication. Why it is considered more secure?
+What is a packet filter and how does it work?
+What are the advantages of using a reverse proxy server?
+What is the difference between a router and a gateway? What is the default gateway?
+Explain the function of each of the following DNS records: SOA, PTR, A, MX, and CNAME.
+Why couldn't MAC addresses be used instead of IPv4/6 for networking?
+What is the smallest IPv4 subnet mask that can be applied to a network containing up to 30 devices?
+What are some common HTTP status codes?
+
+
+******************************Devops Questions******************************
+What is DevOps? Which is more important to the success of any DevOps community: how people communicate or the tools that you choose to deploy? ***
+What is a version control? Are your commit messages good looking?
+Explain some basic git commands.
+Explain a simple Continuous Integration pipeline.
+Explain some basic docker commands.
+Cyber Security Questions (1)
+What is a Security Misconfiguration?
+
+******************************System Questions******************************
+Tell me about your experience with the production environments? ***
+Which distribution would you select for running a major web server? ***
+Explain in a few points the boot process of the Linux system.
+How and why Linux daemons drop privileges? Why some daemons need root permissions to start? Explain. ***
+Why is a load of 1.00 not ideal on a single-core machine?
+What does it mean when the effective user is root, but the real user ID is still your name?
+Developer added cron job which generate massive log files. How do you prevent them from getting so big?
+How the Linux kernel creates, manages and deletes the processes in the system? ***
+Explain the selected information you can see in top and htop. How to diagnose load, high user time and out-of-memory problems with these tools? ***
+How would you recognize a process that is hogging resources?
+You need to upgrade ntpd service at 200 servers. What is the best way to go about upgrading all of these to the latest?
+How to permanently set $PATH on Linux/Unix? Why is this variable so important? ***
+When your server is booting up some errors appears on the console. How to examine boot messages and where are they stored?
+Swap usage too high. What are the reasons for this and how to resolve swapping problems?
+What is umask? How to set it permanently for a user?
+Explain the differences among the following umask values: 000, 002, 022, 027, 077, and 277.
+What is the difference between a symbolic link and a hard link?
+How does the sticky bit work? The SUID/GUID is the same?
+What does LC_ALL=C before command do? In what cases it will be useful?
+How to make high availability of web application? ***
+You are configuring a new server. One of the steps is setting the permissions to the app directories. What steps will you take and what mistakes to avoid?
+What steps will be taken by init when you run telinit 1 from run level 3? What will be the final result of this? If you use telinit 6 instead of reboot command your server will be restarted? ***
+I have forgotten the root password! What do I do in BSD? What is the purpose of booting into single user mode?
+How could you modify a text file without invoking a text editor?
+How to change the kernel parameters? What kernel options might you need to tune? ***
+Explain the /proc filesystem.
+Describe your data backup process. How often should you test your backups? ***
+Explain three types of journaling in ext3/ext4.
+What is an inode? How to find file's inode number and how can you use it?
+ls -l shows file attributes as question marks. What this means and what steps will you take to remove unused "zombie" files?
+To LVM or not to LVM. What benefits does it provide?
+How to increase the size of LVM partition?
+What is a zombie/defunct process?
+What is the proper way to upgrade/update a system in production? Do you automate these processes? Do you set downtime for them? Write recommendations. ***
+Your friend during configuration of the MySQL server asked you: Should I run sudo mysql_secure_installation after installing mysql? What do you think about it?
+Present and explain the good ways of using the kill command.
+What is strace command and how should be used? Explain example of connect to an already running process.
+When would you use access control lists instead of or in conjunction with the chmod command? ***
+Which algorithms are supported in /etc/shadow file?
+What is the use of ulimit in Unix-like systems?
+What are soft limits and hard limits?
+During configuration HAProxy to working with Redis you get General socket error (Permission denied) from log. SELinux is enable. Explain basic SELinux troubleshooting in CLI. ***
+You have configured an RSA key login but your server show Server refused our key as expected. Where will you look for the cause of the problem?
+Why do most distros use ext4, as opposed to XFS or other filesystems? Why are there so many of them? ***
+A project manager needs a new SQL Server. What do you ask her/his? ***
+Create a file with 100 lines with random values.
+How to run script as another user without password?
+How to check if running as root in a bash script? What should you watch out for?
+Can you give a particular example when is indicated to use nobody account? Tell me the differences running httpd service as a nobody and www-data accounts.
+Is there a way to redirect output to a file and have it display on stdout?
+What is the preferred bash shebang and why? What is the difference between executing a file using ./script or bash script?
+You must run command that will be performed for a very long time. How to prevent killing this process after the ssh session drops?
+What is the main purpose of the intermediate certification authorities?
+How to reload PostgreSQL after configuration changes?
+You have added several aliases to .profile. How to reload shell without exit?
+How to exit without saving shell history?
+What is this UID 0 toor account? Have I been compromised?
+Is there an easy way to search inside 1000s of files in a complex directory structure to find files which contain a specific string?
+How to find out the dynamic libraries executables loads when run?
+You have the task of sync the testing and production environments. What steps will you take?
+******************************Network Questions******************************
+Configure a virtual interface on your workstation. ***
+According to an HTTP monitor, a website is down. You're able to telnet to the port, so how do you resolve it?
+Load balancing can dramatically impact server performance. Discuss several load balancing mechanisms. ***
+List examples of network troubleshooting tools that can degrade during DNS issues. ***
+Explain difference between HTTP 1.1 and HTTP 2.0.
+Dev team reports an error: POST http://ws.int/api/v1/Submit/ resulted in a 413 Request Entity Too Large. What's wrong?
+What is handshake mechanism and why do we need 3 way handshake?
+Why is UDP faster than TCP?
+Which, in your opinion, are the 5 most important OpenSSH parameters that improve the security? ***
+What is NAT? What is it used for?
+What is the purpose of Spanning Tree?
+How to check which ports are listening on my Linux Server?
+What mean Host key verification failed when you connect to the remote host? Do you accept it automatically?
+How to send an HTTP request using telnet?
+How do you kill program using e.g. 80 port in Linux?
+You get curl: (56) TCP connection reset by peer. What steps will you take to solve this problem?
+How to allow traffic to/from specific IP with iptables?
+How to block abusive IP addresses with pf in OpenBSD?
+When does the web server like Apache or Nginx write info to log file? Before or after serving the request?
+Analyse web server log and show only 5xx http codes. What external tools do you use?
+Developer uses private key on the server to deploy app through ssh. Why it is incorrect behavior and what is the better (but not ideal) solution in such situations?
+What is the difference between CORS and CSPs?
+Explain four types of responses from firewall when scanning with nmap.
+What does a tcpdump do? How to capture only incoming traffic to your interface?
+
+******************************Devops Questions******************************
+Which are the top DevOps tools? Which tools have you worked on?
+How do all these tools work together?
+What are playbooks in Ansible?
+What is NRPE (Nagios Remote Plugin Executor) in Nagios?
+What is the difference between Active and Passive check in Nagios?
+How to git clone including submodules?
+Mention what are the advantages of using Redis? What is redis-cli?
+
+
+******************************System Questions******************************
+Explain the current architecture you’re responsible for and point out where it’s scalable or fault-tolerant. ***
+Tell me how code gets deployed in your current production. ***
+What are the different types of kernels? Explain.
+The program returns the error of the missing library. How to provide dynamically linkable libraries?
+Write the most important rules for using root privileges safely for novice administrators. ***
+What is the advantage of synchronizing UID/GID across multiple systems?
+What principles to follow for successful system performance tuning? ***
+Describe start-up configuration files and directory in BSD systems.
+CPU spent the most of the time for a IO operations to complete. Which tools do you use for diagnose what process(es) did exactly wait for IO? How to minimize IO wait time? ***
+The Junior dev accidentally destroyed production database. How can you prevent such situations?
+How to add new disk in Linux server without rebooting? How to rescan and add it in LVM?
+Explain each system calls used for process management in Linux.
+Can’t mount the root file system. Why? ***
+You have to delete 100GB files. Which method will be the most optimal? ***
+Explain interrupts and interrupt handlers in Linux.
+What considerations come into play when designing a highly available application, both at the architecture level and the application level? ***
+What fields are stored in an inode?
+Ordinary users are able to read /etc/passwd. Is it a security hole? Do you know other password shadowing scheme?
+What are some of the benefits of using systemd over SysV init? ***
+How do you run command every time a file is modified?
+You need to copy a large amount of data. Explain the most effective way. ***
+Tell me about the dangers and caveats of LVM.
+Python dev team in your company have a dilemma what to choose: uwsgi or gunicorn. What are the pros/cons of each of the solutions from the admin's perspective? ***
+What if kill -9 does not work? Describe exceptions for which the use of SIGKILL is insufficient.
+Difference between nohup, disown, and &. What happens when using all together?
+What is the main advantage of using chroot? When and why do we use it? What is the purpose of the mount dev, proc, sys in a chroot environment?
+What are segmentation faults (segfaults), and how can identify what's causing them?
+One of the processes runs slowly. How to check how long has been running and which tools will you use?
+What is a file descriptor in Linux?
+Which way of additionally feeding random entropy pool would you suggest for producing random passwords? How to improve it?
+What is the difference between /sbin/nologin, /bin/false, and /bin/true?
+Which symptoms might be suffering from a disk bottleneck? ***
+What is the meaning of the error maxproc limit exceeded by uid %i ... in FreeBSD?
+How to read a file line by line and assigning the value to a variable?
+The client reports that his site received a grade B in the ssllabs scanner. Prepare a checklist of best practice for ssl configuration. ***
+What does CPU jumps mean?
+How do you trace a system call in Linux? Explain the possible methods.
+How to remove all files except some from a directory?
+How to check if a string contains a substring in Bash?
+Explain differences between 2>&-, 2>/dev/null, |&, &>/dev/null, and >/dev/null 2>&1.
+How to redirect stderr and stdout to different files in the same line?
+Load averages are above 30 on a server with 24 cores but CPU shows around 70 percent idle. One of the common causes of this condition is? How to debug and fixed?
+How to enforce authorization methods in SSH? In what situations it would be useful?
+Getting Too many Open files error for Postgres. How to resolve it?
+In what circumstance can df and du disagree on available disk space? How do you solve it?
+What is the difference between encryption and hashing?
+Should the root certificate go on the server?
+How to log all commands run by root on production servers?
+How to prevent dd from freezing your system?
+How to limit processes to not exceed more than X% of CPU usage?
+How mount a temporary ram partition?
+How to kills a process that is locking a file?
+Other admin trying to debug a server accidentally typed: chmod -x /bin/chmod. How to reset permissions back to default?
+grub> vs grub-rescue>. Explain.
+How to check whether the private key and the certificate match?
+How to add new user without using useradd/adduser commands?
+Why do we need mktemp command? Present an example of use.
+Is it safe to attach the strace to a running process on the production? What are the consequences?
+What is the easiest, safest and most portable way to remove -rf directory entry?
+Write a simple bash script (or pair of scripts) to backup and restore your system. ***
+What are salted hashes? Generate the password with salt for the /etc/shadow file.
+
+
+******************************Network Questions******************************
+Create SPF records for your site to help control spam. ***
+What is the difference between an authoritative and a nonauthoritative answer to a DNS query? ***
+If you try resolve hostname you get NXDOMAIN from host command. Your resolv.conf stores two nameservers but only second of this store this domain name. Why did not the local resolver check the second nameserver?
+Explore the current MTA configuration at your site. What are some of the special features of the MTA that are in use? ***
+How to find a domain based on the IP address? What techniques/tools can you use? ***
+Is it possible to have SSL certificate for IP address, not domain name?
+How do you do load testing and capacity planning for websites? ***
+Developer reports a problem with connectivity to the remote service. Use /dev for troubleshooting.
+How do I measure request and response times at once using curl?
+You need to move ext4 journal on another disk/partition. What are the reasons for this? ***
+Does having Varnish in front of your website/app mean you don't need to care about load balancing or redundancy?
+What are hits, misses, and hit-for-pass in Varnish Cache?
+What is a reasonable TTL for cached content given the following parameters? ***
+Developer says: htaccess is full of magic and it should be used. What is your opinion about using htaccess files? How has this effect on the web app
+Is it safe to use SNI SSL in production? How to test connection with and without it? In which cases it is useful?
+How are cookies passed in the HTTP protocol?
+How to prevent processing requests in web server with undefined server names? No defined default server name rule can be security issue? ***
+You should rewrite POST with payload to an external API but the POST requests loose the parameters passed on the URL. How to fix this problem (e.g. in Nginx) and what are the reasons for this behavior?
+What is the proper way to test NFS performance? Prepare a short checklist.
+You need to block several IPs from the same subnet. What is the most efficient way for the system to traverse the iptables rule set or the black-hole route?
+How to run scp with a second remote host?
+How can you reduce load time of a dynamic website?
+What types of dns cache working when you type api.example.com in your browser and press return?
+What is the difference between Cache-Control: max-age=0 and Cache-Control: no-cache?
+What are the security risks of setting Access-Control-Allow-Origin?
+Create a single-use TCP or UDP proxy with netcat.
+Explain 3 techniques for avoiding firewalls with nmap.
+
+
+******************************Devops Questions******************************
+Explain how Flap Detection works in Nagios?
+What are the advantages that Containerization provides over Virtualization?
+Is the way of distributing Docker apps (e.g. Apache, MySQL) from Docker Hub is good for production environments? Describe security problems and possible solutions. ***
+Some of the common use cases of LXC and LXD come from the following requirements... Explain.
+You have to prepare a Redis cluster. How will you ensure security?
+
+
+******************************Secret Knowledge******************************
+Explain what is Event-Driven architecture and how it improves performance? ***
+An application encounters some performance issues. You should to find the code we have to optimize. How to profile app in Linux environment?
+Using a Linux system with a limited number of packages installed, and telnet is not available. Use sysfs virtual filesystem to test connection on all interfaces (without loopback).
+Write two golden rules for reducing the impact of hacked system.
+You're on a security conference. Members debating about putting up the OpenBSD firewall on the core of the network. Go to the podium and express your opinion about this solution. What are the pros/cons and why? ***
+Is there a way to allow multiple cross-domains using the Access-Control-Allow-Origin header in Nginx?
+Explain :(){ :|:& };: and how stop this code if you are already logged into a system?
+How to recover deleted file held open e.g. by Apache?
+The team of admins needs your support. You must remotely reinstall the system on one of the main servers. There is no access to the management console (e.g. iDRAC). How to install Linux on disk, from and where other Linux exist and running?
+Rsync triggered Linux OOM killer on a single 50 GB file. How does the OOM killer decide which process to kill first? How to control this?
+You have a lot of sockets, hanging in TIME_WAIT. Your http service behind proxy serve a lot of small http requests. How to check and reduce TIME_WAIT sockets? ***
+How do SO_REUSEADDR and SO_REUSEPORT differ? Explain all socket implementations. ***
+
+****************************linux-interview-questions******************************
+Using the OSI model, which layer has the responsibility of making sure that the packet gets where it is supposed to go?
+
+What is the subnet mask, network address and broadcast address for the following address: 123.65.47.62/22?
+
+What command is used to show all open ports and/or socket connections on a machine?
+
+What is NAT? What is it used for?
+
+Which IP ranges/subnets are "private" or "non-routable" (RFC 1918)?
+
+What is a packet filter and how does it work?
+
+What is a proxy and how does it work?
+
+What is ARP and what is it used for?
+
+What is the difference between TCP and UDP?
+
+What command is used to show the route table for a machine?
+
+Explain asynchronous routing?
+
+What is the purpose of a default gateway?
+
+A TCP connection on a network can be uniquely defined by 4 things. What are those things?
+
+When a client running a web browser connects to a web server, what is the source port of the connection?
+
+What is the destination port of the connection?
+
+What is SMTP?
+
+What is an SMTP relay?
+
+Give the basic scenario of how a mail message is delivered via SMTP
+
+What function does DNS play on a network?
+
+What is an A record?
+
+What is an NS record?
+
+What is an MX record?
+
+What is a PTR record?
+
+What is a DNS forwarder?
+
+What command is used to lookup DNS records?
+
+What is meant by "Reverse Lookup"?
+
+What is LDAP and what is it used for?
+
+What is a DN in LDAP?
+
+What is SSH?
+
+What is SSL?
+
+What is IDS?
+
+What is IPS?
+
+What is the difference between IDS and IPS?
+
+What is meant by the term "DOS Attack"?
+
+What is RAID?
+
+What is swap and what is it used for?
+
+What command will show the available disk space on the Unix/Linux system?
+
+How do you determine the public and prive IP addresses, if applicable, of a Unix/Linux system from the command line?
+
+What Unix/Linux command will alter a file's ownership?
+
+What Unix/Linux command will alter a file's permissions?
+
+What Unix/Linux command will show all processes running on a system?
+
+What Unix/Linux command will show the details of a file(permissions, size, timestamp)?
+
+What Unix/Linux command would you use to list all currently loaded kernel modules?
+
+What command would you use to telnet to port 7777 on a machine with IP address 10.10.10.128?
+
+What Unix/Linux command(s) will show a system's current resource allocations?
+
+What is the Unix/Linux command to remove a directory and its contents?
+
+What is the name and location of the system log on a Unix or Linux system?
+
+What would you do to recover a lost the root password to a Unix/Linux system?
+
+What is the difference between hardlink and symlink?
+
+What happens when you remove the source to a symlink?
+
+What are some of the security risks of symlinks?
+
+Explain a hardlink
+
+Where is a filename stored?
+
+What happens when a hardlink is removed
+
+how do you know when a file is removed
+
+Write a locking function in bash
+
+What is a pre-emptive kernel, what does that mean to you?
+
+What is an atomic operation?
+
+How does a switch get a mac address?
+
+What type of packet to discover a router?
+
+How does traceroute work?
+
+A careless sysadmin executes the following command: chmod 444 chmod - what do you do to fix this?
+
+
+*****************************General Questions*****************************
+What did you learn yesterday/this week?
+Talk about your preferred development/administration environment. (OS, Editor, Browsers, Tools etc.)
+Tell me about the last major Linux project you finished.
+Tell me about the biggest mistake you've made in [some recent time period] and how you would do it differently today. What did you learn from this experience?
+Why we must choose you?
+What function does DNS play on a network?
+What is HTTP?
+What is an HTTP proxy and how does it work?
+Describe briefly how HTTPS works.
+What is SMTP? Give the basic scenario of how a mail message is delivered via SMTP.
+What is RAID? What is RAID0, RAID1, RAID5, RAID10?
+What is a level 0 backup? What is an incremental backup?
+Describe the general file system hierarchy of a Linux system.
+Which difference have between public and private SSH key?
+[⬆] Simple Linux Questions:
+What is the name and the UID of the administrator user?
+How to list all files, including hidden ones, in a directory?
+What is the Unix/Linux command to remove a directory and its contents?
+Which command will show you free/used memory? Does free memory exist on Linux?
+How to search for the string "my konfu is the best" in files of a directory recursively?
+How to connect to a remote server or what is SSH?
+How to get all environment variables and how can you use them?
+I get "command not found" when I run ifconfig -a. What can be wrong?
+What happens if I type TAB-TAB?
+What command will show the available disk space on the Unix/Linux system?
+What commands do you know that can be used to check DNS records?
+What Unix/Linux commands will alter a files ownership, files permissions?
+What does chmod +x FILENAME do?
+What does the permission 0750 on a file mean?
+What does the permission 0750 on a directory mean?
+How to add a new system user without login permissions?
+How to add/remove a group from a user?
+What is a bash alias?
+How do you set the mail address of the root/a user?
+What does CTRL-c do?
+What does CTRL-d do?
+What does CTRL-z do?
+What is in /etc/services?
+How to redirect STDOUT and STDERR in bash? (> /dev/null 2>&1)
+What is the difference between UNIX and Linux.
+What is the difference between Telnet and SSH?
+Explain the three load averages and what do they indicate. What command can be used to view the load averages?
+Can you name a lower-case letter that is not a valid option for GNU ls?
+What is a Linux kernel module?
+Walk me through the steps in booting into single user mode to troubleshoot a problem.
+Walk me through the steps you'd take to troubleshoot a 404 error on a web application you administer.
+What is ICMP protocol? Why do you need to use?
+
+
+*****************************Medium Linux Questions*****************************
+What do the following commands do and how would you use them?
+tee
+awk
+tr
+cut
+tac
+curl
+wget
+watch
+head
+tail
+less
+cat
+touch
+sar
+netstat
+tcpdump
+lsof
+What does an & after a command do?
+What does & disown after a command do?
+What is a packet filter and how does it work?
+What is Virtual Memory?
+What is swap and what is it used for?
+What is an A record, an NS record, a PTR record, a CNAME record, an MX record?
+Are there any other RRs and what are they used for?
+What is a Split-Horizon DNS?
+What is the sticky bit?
+What does the immutable bit do to a file?
+What is the difference between hardlinks and symlinks? What happens when you remove the source to a symlink/hardlink?
+What is an inode and what fields are stored in an inode?
+How to force/trigger a file system check on next reboot?
+What is SNMP and what is it used for?
+What is a runlevel and how to get the current runlevel?
+What is SSH port forwarding?
+What is the difference between local and remote port forwarding?
+What are the steps to add a user to a system without using useradd/adduser?
+What is MAJOR and MINOR numbers of special files?
+Describe the mknod command and when you'd use it.
+Describe a scenario when you get a "filesystem is full" error, but 'df' shows there is free space.
+Describe a scenario when deleting a file, but 'df' not showing the space being freed.
+Describe how 'ps' works.
+What happens to a child process that dies and has no parent process to wait for it and what’s bad about this?
+Explain briefly each one of the process states.
+How to know which process listens on a specific port?
+What is a zombie process and what could be the cause of it?
+You run a bash script and you want to see its output on your terminal and save it to a file at the same time. How could you do it?
+Explain what echo "1" > /proc/sys/net/ipv4/ip_forward does.
+Describe briefly the steps you need to take in order to create and install a valid certificate for the site https://foo.example.com.
+Can you have several HTTPS virtual hosts sharing the same IP?
+What is a wildcard certificate?
+Which Linux file types do you know?
+What is the difference between a process and a thread? And parent and child processes after a fork system call?
+What is the difference between exec and fork?
+What is "nohup" used for?
+What is the difference between these two commands?
+myvar=hello
+export myvar=hello
+How many NTP servers would you configure in your local ntp.conf?
+What does the column 'reach' mean in ntpq -p output?
+You need to upgrade kernel at 100-1000 servers, how you would do this?
+How can you get Host, Channel, ID, LUN of SCSI disk?
+How can you limit process memory usage?
+What is bash quick substitution/caret replace(^x^y)?
+Do you know of any alternative shells? If so, have you used any?
+What is a tarpipe (or, how would you go about copying everything, including hardlinks and special files, from one server to another)?
+How can you tell if the httpd package was already installed?
+How can you list the contents of a package?
+How can you determine which package is better: openssh-server-5.3p1-118.1.el6_8.x86_64 or openssh-server-6.6p1-1.el6.x86_64 ?
+Can you explain to me the difference between block based, and object based storage?
+
+
+*****************************Hard Linux Questions*****************************
+What is a tunnel and how you can bypass a http proxy?
+What is the difference between IDS and IPS?
+What shortcuts do you use on a regular basis?
+What is the Linux Standard Base?
+What is an atomic operation?
+Your freshly configured http server is not running after a restart, what can you do?
+What kind of keys are in ~/.ssh/authorized_keys and what it is this file used for?
+I've added my public ssh key into authorized_keys but I'm still getting a password prompt, what can be wrong?
+Did you ever create RPM's, DEB's or solaris pkg's?
+What does :(){ :|:& };: do on your system?
+How do you catch a Linux signal on a script?
+Can you catch a SIGKILL?
+What's happening when the Linux kernel is starting the OOM killer and how does it choose which process to kill first?
+Describe the linux boot process with as much detail as possible, starting from when the system is powered on and ending when you get a prompt.
+What's a chroot jail?
+When trying to umount a directory it says it's busy, how to find out which PID holds the directory?
+What's LD_PRELOAD and when it's used?
+You ran a binary and nothing happened. How would you debug this?
+What are cgroups? Can you specify a scenario where you could use them?
+How can you remove/delete a file with file-name consisting of only non-printable/non-type-able characters?
+How can you increase or decrease the priority of a process in Linux?
+
+
+*****************************Expert Linux Questions*****************************
+A running process gets EAGAIN: Resource temporarily unavailable on reading a socket. How can you close this bad socket/file descriptor without killing the process?
+What do you control with swapiness?
+How do you change TCP stack buffers? How do you calculate it?
+What is Huge Tables? Why isn't it enabled by default? Why and when use it?
+What is LUKS? How to use it?
+[⬆] Networking Questions:
+What is localhost and why would ping localhost fail?
+What is the similarity between "ping" & "traceroute" ? How is traceroute able to find the hops.
+What is the command used to show all open ports and/or socket connections on a machine?
+Is 300.168.0.123 a valid IPv4 address?
+Which IP ranges/subnets are "private" or "non-routable" (RFC 1918)?
+What is a VLAN?
+What is ARP and what is it used for?
+What is the difference between TCP and UDP?
+What is the purpose of a default gateway?
+What is command used to show the routing table on a Linux box?
+A TCP connection on a network can be uniquely defined by 4 things. What are those things?
+When a client running a web browser connects to a web server, what is the source port and what is the destination port of the connection?
+How do you add an IPv6 address to a specific interface?
+You have added an IPv4 and IPv6 address to interface eth0. A ping to the v4 address is working but a ping to the v6 address gives you the response sendmsg: operation not permitted. What could be wrong?
+What is SNAT and when should it be used?
+Explain how could you ssh login into a Linux system that DROPs all new incoming packets using a SSH tunnel.
+How do you stop a DDoS attack?
+How can you see content of an ip packet?
+What is IPoAC (RFC 1149)?
+What will happen when you bind port 0?
+
+
+*****************************MySQL questions*****************************
+How do you create a user?
+How do you provide privileges to a user?
+What is the difference between a "left" and a "right" join?
+Explain briefly the differences between InnoDB and MyISAM.
+Describe briefly the steps you need to follow in order to create a simple master/slave cluster.
+Why should you run "mysql_secure_installation" after installing MySQL?
+How do you check which jobs are running?
+How would you take a backup of a MySQL database?
+
+
+*****************************Fun Questions*****************************
+A careless sysadmin executes the following command: chmod 444 /bin/chmod - what do you do to fix this?
+I've lost my root password, what can I do?
+I've rebooted a remote server but after 10 minutes I'm still not able to ssh into it, what can be wrong?
+If you were stuck on a desert island with only 5 command-line utilities, which would you choose?
+You come across a random computer and it appears to be a command console for the universe. What is the first thing you type?
+Tell me about a creative way that you've used SSH?
+You have deleted by error a running script, what could you do to restore it?
+What will happen on 19 January 2038?
+How to reboot server when reboot command is not responding?
+
+
+*****************************DevOps Questions*****************************
+Can you describe your workflow when you create a script?
+What is GIT?
+What is a dynamically/statically linked file?
+What does "./configure && make && make install" do?
+What is puppet/chef/ansible used for?
+What is Nagios/Zenoss/NewRelic used for?
+What is Jenkins/TeamCity/GoCI used for?
+What is the difference between Containers and VMs?
+How do you create a new postgres user?
+What is a virtual IP address? What is a cluster?
+How do you print all strings of printable characters present in a file?
+How do you find shared library dependencies?
+What is Automake and Autoconf?
+./configure shows an error that libfoobar is missing on your system, how could you fix this, what could be wrong?
+What are the advantages/disadvantages of script vs compiled program?
+What's the relationship between continuous delivery and DevOps?
+What are the important aspects of a system of continuous integration and deployment?
+How would you enable network file sharing within AWS that would allow EC2 instances in multiple availability zones to share data?
