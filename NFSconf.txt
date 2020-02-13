@@ -1,4 +1,4 @@
-NFS configuration
+NFS conf
 yum install nfs* -y
 mkdir /testnfs
 chmod 777 testnfs
