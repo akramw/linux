@@ -1,0 +1,83 @@
+cd /
+yum install mariadb* -y
+systemctl start mariadb
+systemctl enable mariadb
+firewall-cmd --permanent --add-service=mysql
+firewall-cmd --reload
+mysql_secure_installation
+mysql -u root -p
+
+show databases;
+create database wasim;
+use wasim;
+
+create table employee(
+	id int not null,
+	name varchar (20) not null,
+	age int not null,
+	address char (30),
+	salary decimal (15,2),
+	primary key (id)
+	);
+	
+show tables;
+describe employee;
+drope table employee;
+
+insert into emp (id,name,age,address,salary) values
+	(1,'alok',22,'USA',66000.00);
+insert into employee (id,name,age,address,salary) values
+	(2,'ram',43,'UP',200000.00);
+insert into employee (id,name,age,address,salary) values
+	(3,'sam',18,'UK',10000.00);
+insert into employee (id,name,age,address,salary) values
+	(4,'rimi',33,'INDIA',50000.00);
+insert into employee (id,name,age,address,salary) values
+	(5,'rahul',23,'IND',5000.00);
+insert into employee (id,name,age,address,salary) values
+	(6,'jadu',80,'DELHI',77000.00);
+insert into employee (id,name,age,address,salary) values
+	(7,'kajol',35,'ASAM',80000.00);
+insert into employee (id,name,age,address,salary) values
+	(8,'madhu',27,'MUMBAI',330000.00);
+insert into employee (id,name,age,address,salary) values
+	(9,'alx',29,'ENGLAND',29000.00);
+insert into employee (id,name,age,address,salary) values
+	(10,'jon',37,'GERMANY',45000.00);
+
+select * from employee;
+exit;
+
+TABIL Creat
+
+create table emp(
+	id int not null,
+	First_Name varchar (20) not null,
+	Last_Name varchar (20) not null,
+	Age int not null,
+	Addres char (30),   
+	Depertment char (30),
+	Salary decimal (15,2),
+	primary key (id)
+	);
+	
+insert into emp (id,First_Name,Last_Name,Age,Addres,Depertment,Salary) values
+	(1,'alok','sk',22,'USA','IT',66000.00);
+insert into emp (id,First_Name,Last_Name,Age,Addres,Depertment,Salary) values
+	(2,'ram','fl',43,'UP','CHA',200000.00);
+insert into emp (id,First_Name,Last_Name,Age,Addres,Depertment,Salary) values
+	(3,'sam','gk',18,'UK','CSE',10000.00);
+insert into emp (id,First_Name,Last_Name,Age,Addres,Depertment,Salary) values
+	(4,'rimi','fc',33,'INDIA','IT',50000.00);
+insert into emp (id,First_Name,Last_Name,Age,Addres,Depertment,Salary) values
+	(5,'rahul','ko',23,'IND','BIO',5000.00);
+insert into emp (id,First_Name,Last_Name,Age,Addres,Depertment,Salary) values
+	(6,'jadu','rt',80,'DELHI','BIO',77000.00);
+insert into emp (id,First_Name,Last_Name,Age,Addres,Depertment,Salary) values
+	(7,'kajol','tb',35,'ASAM','CSE',80000.00);
+insert into emp (id,First_Name,Last_Name,Age,Addres,Depertment,Salary) values
+	(8,'madhu','wx',27,'MUMBAI','BIO',330000.00);
+insert into emp (id,First_Name,Last_Name,Age,Addres,Depertment,Salary) values
+	(9,'alx','cm',29,'ENGLAND','IT',29000.00);
+insert into emp (id,First_Name,Last_Name,Age,Addres,Depertment,Salary) values
+	(10,'jon','pm',37,'GERMANY','IT',45000.00);

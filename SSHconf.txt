@@ -1,0 +1,20 @@
+
+
+Step 1: Create Authentication SSH-Kegen Keys on – (192.168.1.100)Server Machine
+#ssh-keygen -t rsa -b 4096 (size)  rsa dafult size 2048 quickly dump
+
+Step 2: Create .ssh Directory on – (192.168.1.200)Client Machine
+#ssh sshuser@192.168.1.200 mkdir -p .ssh
+#ssh sshuser@192.168.1.100 mkdir -p .ssh
+
+Step 3: Upload Generated Public Keys to – (192.168.1.200)Client Machine
+#cat .ssh/id_rsa.pub | ssh sshuser@192.168.1.200 'cat >> .ssh/authorized_keys'
+#cat /root/.ssh/id_rsa.pub | ssh sshuser@192.168.1.100 'cat >> .ssh/authorized_keys'
+
+Step 4: Set Permissions on – (192.168.1.200)Client Machine
+#ssh sshuser@192.168.1.200 "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"
+#ssh sshuser@192.168.1.100 "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"
+
+Step 5: Login from (192.168.1.100)Server Machine to 192.168.1.200)Client Machine Server without Password
+#ssh sshuser@192.168.1.200
+#ssh sshuser@192.168.1.100
