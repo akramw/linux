@@ -18,3 +18,9 @@ Step 4: Set Permissions on – (192.168.1.200)Client Machine
 Step 5: Login from (192.168.1.100)Server Machine to 192.168.1.200)Client Machine Server without Password
 #ssh sshuser@192.168.1.200
 #ssh sshuser@192.168.1.100
+
+#SSH-COPY-ID
+
+ssh-keygen
+ssh-copy-id -i ~/.ssh/id_rsa.pub remote-host
+ssh remote-host
