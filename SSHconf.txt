@@ -24,3 +24,6 @@ Step 5: Login from (192.168.1.100)Server Machine to 192.168.1.200)Client Machine
 ssh-keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub username@server_ip_address
 ssh remote-host
+
+#SCP Linux Remote Copy
+scp file.txt remote_username@10.10.0.2:/remote/directory
