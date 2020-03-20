@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+#Creat a ter file
+
+tar cvf /tmp/backup.tar /etc &> /dev/null
+
+#compress the file with ZIP
+
+gzip /tmp/backup.tar &> /dev/null
+
+find /tmp/backup.tar.gz -mtime -1 -print &> /dev/null
+
+if [ $? -eq 0 ]
+        then
+echo
+echo "Backup was Created!!!"
+echo
+echo "Archiving Backup Done!!!"
+echo
+        else
+echo "Backup Failed!!!"
+fi

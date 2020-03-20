@@ -1,0 +1,15 @@
+#!/bin/bash
+#Test from on file which have set of IP list
+
+host="/root/WASIM/ipadd"
+
+for ip in $(cat $host)
+do
+ping -c1 $ip &> /dev/null
+        if [ $? -eq 0 ]
+then
+echo "IP Address $ip Working fine"
+else
+echo "IP Address $ip Not Working"
+fi
+done

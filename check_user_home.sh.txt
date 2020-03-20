@@ -1,0 +1,16 @@
+#!/bin/bash
+
+cd /home
+
+        for DIR in *
+
+do
+        CHK=$( grep -c "/home/$DIR" /etc/passwd )
+
+        if [ $CHK -ge 1 ]
+then
+        echo "$DIR User is belong to HOME!!!"
+else
+        echo "$DIR User not belong to HOME!!!"
+        fi
+done

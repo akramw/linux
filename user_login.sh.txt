@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+echo "Plese enter day (e.g Mon)"
+read day
+echo "Plese enter month (e.g Aug)"
+read mont
+echo "Plese enter date (e.g 28)"
+read dat
+echo
+
+last | grep "$day $mont $dat" | awk '{ print $1}'
+

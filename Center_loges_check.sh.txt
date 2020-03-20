@@ -1,0 +1,60 @@
+Central Logging
+=================
+
+#!/bin/bash
+
+####ON UP TO DATE LOG CHECK
+
+#today=`date | awk '{ print $2,$3}'`
+
+#echo $today
+
+#cat /var/log/messages | grep "$today" | grep error > /tmp/sk
+
+######################################
+
+tail -fn0 /var/log/messages | while read byline
+
+do
+        echo $byline | egrep -i "refused|invalid|error|fail|lost|shut|down|offline"
+        if [ $? = 0 ]
+        then
+        echo $line >> /tmp/allerrorlog.txt
+        fi
+done
+
+
+
+--------------------------------------------------------------------
+
+Run script in the background: nohup ./scriptname.sh &
+
+jobs
+
+kill  %1
+--------------------------------------------------------------------
+
+Notification:
+
+#!/bin/bash
+
+
+
+systems="mail2@centos.example.com,mail3@centos.example.com,mail3@centos.example.com"
+
+
+if [ -s /tmp/filtered-messages ]
+
+
+        then
+
+        cat /tmp/filtered-messages | sort | uniq | mail -s "CHECK: Syslog Errors" $systems
+        rm /tmp/filtered-messages
+
+        else
+        fi
+
+--------------------------------------------------------------------
+Schedule the Notification to run every 15 minutes:
+
+*/15 * * * * /root/Log-Alert

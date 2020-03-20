@@ -1,0 +1,15 @@
+#!/bin/bash
+
+FILE="/etc/passwd
+/etc/group
+/etc/ssh.configur
+/etc/shadow
+/etc/fake"
+
+for f in $FILE
+do
+        if [ ! -e $f ]
+        then
+        echo $f Do not Exit!!!
+        fi
+done

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#mail -s “The Subject” user1@domain.com < /root/testemail.txt
+
+
+MAIL="/root/WASIM/mailbox.txt"
+
+for ML in $(cat $MAIL)
+
+do
+
+echo “THIS IS A EMAIL FROM Shell Scripting -User: WASIM” | mail -s 'Wasim Is tes                                                                                        ting for all' $ML
+
+
+done

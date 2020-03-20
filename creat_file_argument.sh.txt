@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "How many file you want?"
+read f
+echo "Enter the file name:"
+read n
+
+for i in $(seq 1 $f)
+do
+        touch $n.$i
+        chmod 777 $n.$i
+done
