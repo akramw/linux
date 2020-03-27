@@ -1,0 +1,55 @@
+httpd -v
+
+vi /etc/httpd/conf/httpd.conf
+
+On Apache 2.2 Version
+
+<Directory /var/www/html> 
+Options Indexes Includes FollowSymLinks MultiViews 
+AllowOverride All
+Order allow,deny
+Allow from all 
+</Directory>
+
+On Apache 2.4 Version
+
+<Directory /var/www/html> 
+Options Indexes Includes FollowSymLinks MultiViews 
+AllowOverride All 
+Require all granted 
+</Directory>
+
+systemctl restart httpd
+
+mkdir /home/james
+
+touch /home/siva/testfile
+
+htpasswd -c /home/james/pass-file james
+Psaawd: TmPcZjtRQx
+
+systemctl restart httpd
+
+cd /home/james
+
+chown apache: testfile
+
+chmod 640 testfile
+
+vi /var/www/html/.htaccess
+
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile /home/siva/testfile
+Require user siva
+
+systemctl restart httpd
+
+
+
+
+
+
+
+
+

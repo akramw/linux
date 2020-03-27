@@ -1,0 +1,61 @@
+To enable nginx official yum repository for RHEL/CentOS 7, create a file /etc/yum.repos.d/nginx.repo with the following contents:
+
+[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/mainline/centos/7/$basearch/
+gpgcheck=0
+enabled=1
+
+
+ssh steve@172.16.238.11	Am3ric@
+curl -Ik https://172.16.238.11/   
+
+
+yum -y update
+yum install epel-release -y
+yum install nginx -y
+
+systemctl start nginx
+systemctl enable nginx
+systemctl status nginx
+systemctl restart nginx
+
+cd /usr/share/nginx/html
+
+vi index.html
+
+netstat -tulpn | grep 80
+ss -tln
+
+
+cd /etc/pki/tls/certs/
+nautilus.crt
+nautilus.key
+
+vi /etc/nginx/nginx.conf
+# add into "server" section
+    server {
+        listen       80 default_server;
+        listen       [::]:80 default_server;
+        listen       443 ssl;
+        server_name  www.centos.com;
+        root         /usr/share/nginx/html;
+
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        ssl_certificate      /etc/pki/tls/certs/nautilus.crt;
+        ssl_certificate_key  /etc/pki/tls/certs/nautilus.key;
+
+
+systemctl restart nginx
+systemctl enable nginx
+systemctl status nginx
+
+Host Server::curl -Ik https://172.16.238.11/ 
+
+
+http://SERVER_DOMAIN_NAME_OR_IP 
+
+The default server root directory : /etc/nginx.
+The main Nginx configuration file: /etc/nginx/nginx.conf.
+Server block (virtual hosts) configurations can be added in: /etc/nginx/conf.d.
+The default server document root directory (contains web files): /usr/share/nginx/html.
