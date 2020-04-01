@@ -1,0 +1,90 @@
+Network Time Protocol  {Port No. 123 (UDP)}:
+NTP is an old, widely known and cross-platform protocol designed to synchronize the clocks of computers over a network. It commonly synchronizes a computer to Internet time servers or other sources, such as a radio or satellite receiver or telephone modem service. It can also be used as a time source/server for client systems.
+
+Configure NTP Server & NTP Clients in Redhat Enterprise Linux 8 (Chronyd Service for Clock Synchronization):
+-----
+In RHEL Linux 8, the ntp package is no longer supported and it is implemented by the chronyd (a daemon that runs in user-space) which is provided in the chrony package.
+
+chrony works both as an NTP server and as an NTP client, which is used to synchronize the system clock with NTP servers, and can be used to synchronize the system clock with a reference clock (e.g a GPS receiver).
+
+Server Side Configuration:
+-----------
+1. Login as root user in server and ensure that the local yum repository in properly configure in your server.
+# dnf repolist
+
+2. Install NTP Packages (Chrony) in the server.
+# dnf install chrony* -y
+
+3. Start the chronyd service in the server.
+# systemctl start chronyd
+
+4. Enable the chrony service so that it can restart at its own after the reboot.
+# systemctl enable chronyd
+
+5. Check the status of chrony service to make sure it is up and running.
+# systemctl status chronyd
+
+6. Make an entry for the Network in configuration file of NTP (chrony).
+# vim /etc/chrony.conf
+allow 192.168.1.0/24
+
+7. Restart the chronyd service.
+# systemctl restart chronyd
+
+8. Add NTP service in the firewall so that others systems in the network can connect to it.
+# firewall-cmd --permanent --add-service=ntp
+
+9. Reload the firewall now, so that the new rule can get implement.
+# firewall-cmd --reload
+
+10. Check NTP clients connected to the Server.
+# chronyc clients
+
+Client Side Configuration: (RHEL 7 Or RHEL 8)
+-------------
+1. Login as root user in server and ensure that the local yum repository in properly configure in your server.
+# yum repolist
+
+2. Install NTP Packages (Chrony) in the server.
+# yum install chrony* -y
+
+OR 
+
+You can install it using RPM command if local yum repository is not configured in your server.
+# rpm -ivh chrony
+
+3. Start the chronyd service in the server.
+# systemctl start chronyd
+
+4. Enable the chrony service so that it can restart at its own after the reboot.
+# systemctl enable chronyd
+
+5. Check the status of chrony service to make sure it is up and running.
+# systemctl status chronyd
+
+6. Make an entry for the Network in configuration file of NTP (chrony).
+# vim /etc/chrony.conf
+server 192.168.1.107
+
+7. Restart the chronyd service.
+# systemctl restart chronyd
+
+8. Check the details of your NTP server with which your are getting service.
+# chronyc sources
+
+Client Side Configuration (Microsoft Windows):
+----------
+Win+R =) Control =) Date & Time =) Internet Time
+
+Mention the IP Address of your NTP Server.
+----------
+Verify All Clients are connected and working as expected:
+Now Go To NTP Server:
+And Check the details of NTP clients connected to the Server. It must show you the details of the client machine you have just configured.
+# chronyc clients
+
+Now Change the time on the NTP Client and resnyc it again.
+Now Go to NTP Server & Verify that the time has been changed on it.
+# date
+You should see the same time on both.
+That's All.
